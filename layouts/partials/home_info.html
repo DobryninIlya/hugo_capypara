@@ -6,6 +6,11 @@
     <div class="entry-content">
         {{ .Content | markdownify }}
     </div>
+    {{- if .Image }}
+    <div class="entry-image">
+        <img src="{{ .Image }}" alt="{{ .Title }}">
+    </div>
+    {{- end }}
     <footer class="entry-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
     </footer>

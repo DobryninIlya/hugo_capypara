@@ -1,0 +1,32 @@
+baseURL: ''
+languageCode: 'ru-ru'
+title: 'Capypara learning'
+theme: 'PaperMod'
+
+params:
+  homeInfoParams:
+    Title: "Разработка Flutter + Go"
+    Content: Курс по разработке мобильных приложений на Flutter и серверной части на Go
+    Image: "/img/logo.png"
+  ShowReadingTime: true
+  ShowTags: true
+  ShowRelatedPosts: true
+  ShowFullImages: true
+  ShowWordCount: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  cover:
+    - linkFullImages: true
+
+
+menus:
+  main:
+    - name: 'Главная'
+      pageRef: '/'
+      weight: 10
+    - name: 'Уроки'
+      pageRef: '/lessons'
+      weight: 20
+    - name: 'Архив'
+      pageRef: '/archives/'
+      weight: 30

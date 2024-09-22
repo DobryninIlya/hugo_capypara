@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Переменные on Capypara learning</title>
+    <link>//localhost:1313/tags/%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5/</link>
+    <description>Recent content in Переменные on Capypara learning</description>
+    <generator>Hugo -- 0.134.3</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Sun, 22 Sep 2024 19:25:19 +0300</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Введение в Golang</title>
+      <link>//localhost:1313/lessons/1/</link>
+      <pubDate>Sun, 22 Sep 2024 19:25:19 +0300</pubDate>
+      <guid>//localhost:1313/lessons/1/</guid>
+      <description>&lt;h2 id=&#34;переменные-и-их-типы&#34;&gt;Переменные и их типы&lt;/h2&gt;
+&lt;p&gt;Переменные в Go (или Golang) используются для хранения данных различных типов. Объявление переменных в Go происходит с помощью ключевого слова &lt;code&gt;var&lt;/code&gt;. После него идет имя переменной и ее тип.&lt;/p&gt;
+&lt;p&gt;Пример простого объявления переменной:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Здесь переменная x имеет тип int (целое число).&lt;/p&gt;
+&lt;p&gt;Go также поддерживает множественное объявление переменных:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;b&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;c&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;В этом случае переменные a, b и c имеют тип int.&lt;/p&gt;
+&lt;p&gt;Короткое объявление переменных
+Для краткости, можно использовать оператор := для одновременного объявления и присвоения значения переменной. В этом случае тип переменной определяется автоматически:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

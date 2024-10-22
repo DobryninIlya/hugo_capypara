@@ -30,7 +30,7 @@ LABEL name="hugo_image"
 EXPOSE 1313
 
 # Строим сайт Hugo
-RUN hugo
+RUN hugo --ignoreCache
 
 # Запускаем Hugo сервер
 CMD ["hugo", "server", "--bind", "0.0.0.0"]

@@ -17,6 +17,10 @@ params:
   ShowPostNavLinks: true
   cover:
     - linkFullImages: true
+  params:
+    social:
+      - name: "GitHub"
+        url: "https://github.com/dobryninilya"
 
 
 menus:

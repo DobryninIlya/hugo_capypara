@@ -25,5 +25,9 @@ COPY . /app
 # RUN go mod download # для Go зависимостей
 LABEL name="hugo_image"
 EXPOSE 1313
+
+# Строим сайт Hugo
+RUN hugo
+
 # Запускаем Hugo сервер
 CMD ["hugo", "server", "--bind", "0.0.0.0"]

@@ -1,0 +1,32 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Go build artifacts
+/bin/
+/pkg/
+/vendor/
+
+# Go dependency files
+go.sum
+
+# Node.js dependencies
+node_modules/
+
+# Hugo generated files
+/public/
+/resources/_gen/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+public/

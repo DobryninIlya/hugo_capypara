@@ -7,7 +7,7 @@ params:
   homeInfoParams:
     Title: "Разработка Flutter + Go"
     Content: Курс по разработке мобильных приложений на Flutter и серверной части на Go
-    Image: "/img/logo.png"
+    Image: "/img/logo.pnghugo ver"
   ShowReadingTime: true
   ShowTags: true
   ShowRelatedPosts: true

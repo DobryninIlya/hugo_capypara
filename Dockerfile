@@ -29,7 +29,7 @@ RUN git submodule init && git submodule update
 # RUN npm install # для JavaScript зависимостей
 # RUN go mod download # для Go зависимостей
 LABEL name="hugo_image"
-EXPOSE 80
+EXPOSE 443
 
 # Строим сайт Hugo
 RUN hugo --ignoreCache
@@ -38,4 +38,4 @@ RUN hugo --ignoreCache
 #RUN certbot certonly --standalone --non-interactive --agree-tos --email mr.woodysimpson@gmail.com -d numerologistic.ru
 
 # Запускаем Hugo сервер
-CMD ["hugo", "server", "--baseURL", "https://numerologistic.ru", "--bind", "0.0.0.0", "--port", "80"]
+CMD ["hugo", "server", "--baseURL", "https://numerologistic.ru", "--bind", "0.0.0.0", "--port", "443"]

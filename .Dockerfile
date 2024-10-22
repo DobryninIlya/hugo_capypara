@@ -24,5 +24,6 @@ COPY . /app
 # RUN npm install # для JavaScript зависимостей
 # RUN go mod download # для Go зависимостей
 LABEL name="hugo_image"
+EXPOSE 1313
 # Запускаем Hugo сервер
 CMD ["hugo", "server", "--bind", "0.0.0.0"]

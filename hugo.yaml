@@ -1,13 +1,13 @@
-baseURL: ''
+baseURL: 'https://numerologistic.ru/'
 languageCode: 'ru-ru'
 title: 'Capypara learning'
 theme: 'PaperMod'
 
 params:
   homeInfoParams:
-    Title: "Разработка Flutter + Go"
-    Content: Курс по разработке мобильных приложений на Flutter и серверной части на Go
-    Image: "/img/logo.pnghugo ver"
+    Title: "Numerologistic - твой путеводитель в нумерологии"
+    Content: Сайт о числах и их влиянии на нашу жизнь
+    Image: "/img/logo.png"
   ShowReadingTime: true
   ShowTags: true
   ShowRelatedPosts: true
@@ -27,8 +27,8 @@ menus:
     - name: 'Главная'
       pageRef: '/'
       weight: 10
-    - name: 'Уроки'
-      pageRef: '/lessons'
+    - name: 'Статьи'
+      pageRef: '/articles'
       weight: 20
     - name: 'Архив'
       pageRef: '/archives/'

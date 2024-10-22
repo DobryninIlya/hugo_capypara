@@ -35,7 +35,7 @@ EXPOSE 1313
 RUN hugo --ignoreCache
 
 # Получаем сертификаты с помощью certbot
-RUN certbot certonly --standalone --non-interactive --agree-tos --email mr.woodysimpson@gmail.com -d numerologistic.ru
+#RUN certbot certonly --standalone --non-interactive --agree-tos --email mr.woodysimpson@gmail.com -d numerologistic.ru
 
 # Запускаем Hugo сервер
 CMD ["hugo", "server", "--bind", "0.0.0.0"]

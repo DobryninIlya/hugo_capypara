@@ -20,6 +20,9 @@ WORKDIR /app
 # Копируем файлы проекта в контейнер
 COPY . /app
 
+# Инициализируем и обновляем подмодули
+RUN git submodule init && git submodule update
+
 # Устанавливаем зависимости (если есть)
 # RUN npm install # для JavaScript зависимостей
 # RUN go mod download # для Go зависимостей

@@ -1,0 +1,12 @@
+- id: home
+  translation: "Главная"
+- id: articles
+  translation: "Статьи"
+- id: archives
+  translation: "Архив"
+- id: date_format
+  translation: "02 января 2006"
+- id: numerologies
+  translation: "Нумерология"
+- id: calculations
+  translation: "Рассчеты"

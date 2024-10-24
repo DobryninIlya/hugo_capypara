@@ -1,13 +1,17 @@
 baseURL: 'https://numerologistic.ru'
 languageCode: 'ru-ru'
-title: 'Capypara learning'
+title: 'Numerologistic'
 theme: 'PaperMod'
+defaultContentLanguage: "ru"
 
 params:
   homeInfoParams:
     Title: "Numerologistic - твой путеводитель в нумерологии"
     Content: Сайт о числах и их влиянии на нашу жизнь
     Image: "/img/logo.png"
+  cover:
+      linkFullImages: true
+      responsiveImages: true
   ShowReadingTime: true
   ShowTags: true
   ShowRelatedPosts: true
@@ -15,11 +19,8 @@ params:
   ShowWordCount: true
   ShowBreadCrumbs: true
   ShowPostNavLinks: true
-  cover:
-    - linkFullImages: true
-  social:
-    - name: "GitHub"
-      url: "https://github.com/dobryninilya"
+
+
 
 
 menus:
@@ -27,9 +28,25 @@ menus:
     - name: 'Главная'
       pageRef: '/'
       weight: 10
-    - name: 'Статьи'
-      pageRef: '/articles'
+    - name: 'Нумерология'
+      pageRef: '/numerology/'
       weight: 20
+    - name: 'Расчеты'
+      pageRef: '/calculations/'
+      weight: 30
+    - name: 'Ангельская нумерология'
+      pageRef: '/angel-numerology/'
+      weight: 40
+    - name: 'Совместимость'
+      pageRef: '/compatibility/'
+      weight: 50
     - name: 'Архив'
       pageRef: '/archives/'
-      weight: 30
+      weight: 60
+
+languages:
+  ru:
+    languageName: "Русский"
+    weight: 1
+    contentDir: "content/ru"
+    languageCode: "ru-ru"

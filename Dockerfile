@@ -37,5 +37,6 @@ RUN hugo --ignoreCache
 # Получаем сертификаты с помощью certbot
 #RUN certbot certonly --standalone --non-interactive --agree-tos --email mr.woodysimpson@gmail.com -d numerologistic.ru
 
+# hugo server --baseURL https://numerologistic.ru --bind 0.0.0.0 --port 443
 # Запускаем Hugo сервер
 CMD ["hugo", "server", "--baseURL", "https://numerologistic.ru", "--bind", "0.0.0.0", "--port", "443"]

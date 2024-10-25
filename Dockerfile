@@ -1,7 +1,7 @@
 # Используем базовый образ Alpine Linux
 FROM alpine:latest
 
-# Устанавливаем необходимые пакеты (только apache2 и зависимости)
+# Устанавливаем необходимые пакеты (добавляем apache2)
 RUN apk add --no-cache \
     curl \
     git \
@@ -29,9 +29,6 @@ RUN hugo --ignoreCache
 
 # Переносим сгенерированные статические файлы в директорию Apache
 RUN mkdir -p /var/www/html && cp -r /app/public/* /var/www/html/
-
-# Копируем конфигурацию Apache с оптимизациями
-COPY apache.conf /etc/apache2/httpd.conf
 
 # Открываем порт для Apache
 EXPOSE 80

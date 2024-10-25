@@ -72,12 +72,6 @@ outputs:
     - RSS
 
 
-
-# Поддержка SRI (Subresource Integrity)
-outputFormats:
-  HTML:
-    SRI: "sha256"
-
 minify:
   minifyOutput: false
 

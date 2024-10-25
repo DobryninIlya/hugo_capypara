@@ -71,5 +71,24 @@ outputs:
     - HTML
     - RSS
 
+security:
+contentSecurityPolicy:
+  enable: true
+  policy: |
+    default-src 'self';
+    script-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline';
+    font-src 'self';
+    object-src 'none';
+    connect-src 'self';
+    img-src 'self' data:;
+featurePolicy:
+  enable: true
+  policy: "geolocation 'self'; microphone 'none'; camera 'none';"
+
+# Поддержка SRI (Subresource Integrity)
+outputFormats:
+  HTML:
+    SRI: "sha256"
 #params:
 #  rssLimit: 10  # Опционально, ограничение на количество элементов в RSS

@@ -1,16 +1,12 @@
 # Используем базовый образ Alpine Linux
 FROM alpine:latest
 
-# Устанавливаем необходимые пакеты (добавляем apache2 и модули)
+# Устанавливаем необходимые пакеты (только apache2 и зависимости)
 RUN apk add --no-cache \
     curl \
     git \
     bash \
     apache2 \
-    apache2-utils \
-    apache2-mod-http2 \
-    apache2-mod-deflate \
-    apache2-mod-headers \
     libc6-compat \
     libstdc++ \
     gcc

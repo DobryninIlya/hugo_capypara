@@ -5,6 +5,7 @@ theme: 'PaperMod'
 defaultContentLanguage: "ru"
 
 params:
+  env: "production"
   homeInfoParams:
     Title: "Numerologistic - твой путеводитель в нумерологии"
     Content: Сайт о числах и их влиянии на нашу жизнь
@@ -45,9 +46,9 @@ menus:
     - name: 'Совместимость'
       pageRef: '/compatibility/'
       weight: 50
-    - name: 'Архив'
-      pageRef: '/archives/'
-      weight: 60
+#    - name: 'Архив'
+#      pageRef: '/archives/'
+#      weight: 60
 
 languages:
   ru:
@@ -67,9 +68,6 @@ outputs:
     - HTML
     - RSS
   taxonomy:
-    - HTML
-    - RSS
-  taxonomyTerm:
     - HTML
     - RSS
 

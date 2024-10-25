@@ -9,7 +9,7 @@ uglyURLs: false
 
 params:
   env: "production"
-  .assets:
+  assets:
     disableFingerprinting: true
   homeInfoParams:
     Title: "Numerologistic - твой путеводитель в нумерологии"

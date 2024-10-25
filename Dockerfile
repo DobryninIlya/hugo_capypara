@@ -31,7 +31,7 @@ RUN hugo --ignoreCache -d /var/www/html
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Открываем порт 80 для сервера
-EXPOSE 80
+EXPOSE 443
 
 # Запуск NGINX
 CMD ["nginx", "-g", "daemon off;"]

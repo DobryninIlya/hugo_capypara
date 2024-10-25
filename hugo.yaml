@@ -57,3 +57,20 @@ languages:
 
 taxonomies:
   social: "social"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+  section:
+    - HTML
+    - RSS
+  taxonomy:
+    - HTML
+    - RSS
+  taxonomyTerm:
+    - HTML
+    - RSS
+
+#params:
+#  rssLimit: 10  # Опционально, ограничение на количество элементов в RSS

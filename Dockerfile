@@ -1,16 +1,15 @@
 # Используем базовый образ Alpine Linux
 FROM alpine:latest
 
-# Устанавливаем необходимые пакеты
+# Устанавливаем необходимые пакеты (добавляем apache2)
 RUN apk add --no-cache \
     curl \
     git \
     bash \
+    apache2 \
     libc6-compat \
     libstdc++ \
-    gcc \
-    certbot \
-    certbot-nginx
+    gcc
 
 # Устанавливаем последнюю версию Hugo
 RUN LATEST_HUGO=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "tag_name" | cut -d '"' -f 4) && \
@@ -25,18 +24,14 @@ COPY . /app
 # Инициализируем и обновляем подмодули
 RUN git submodule init && git submodule update
 
-# Устанавливаем зависимости (если есть)
-# RUN npm install # для JavaScript зависимостей
-# RUN go mod download # для Go зависимостей
-LABEL name="hugo_image"
-EXPOSE 443
-
-# Строим сайт Hugo
+# Строим сайт Hugo (статические файлы будут в /app/public)
 RUN hugo --ignoreCache
 
-# Получаем сертификаты с помощью certbot
-#RUN certbot certonly --standalone --non-interactive --agree-tos --email mr.woodysimpson@gmail.com -d numerologistic.ru
+# Переносим сгенерированные статические файлы в директорию Apache
+RUN mkdir -p /var/www/html && cp -r /app/public/* /var/www/html/
 
-# hugo server --baseURL https://numerologistic.ru --bind 0.0.0.0 --port 443
-# Запускаем Hugo сервер
-CMD ["hugo", "server", "--baseURL", "https://numerologistic.ru", "--bind", "0.0.0.0", "--port", "443"]
+# Открываем порт для Apache
+EXPOSE 80
+
+# Запускаем Apache
+CMD ["httpd", "-D", "FOREGROUND"]

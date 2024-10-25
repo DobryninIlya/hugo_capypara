@@ -90,5 +90,9 @@ featurePolicy:
 outputFormats:
   HTML:
     SRI: "sha256"
+
+minify:
+  minifyOutput: false
+
 #params:
 #  rssLimit: 10  # Опционально, ограничение на количество элементов в RSS

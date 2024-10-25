@@ -6,6 +6,8 @@ defaultContentLanguage: "ru"
 
 params:
   env: "production"
+  .assets:
+    disableFingerprinting: true
   homeInfoParams:
     Title: "Numerologistic - твой путеводитель в нумерологии"
     Content: Сайт о числах и их влиянии на нашу жизнь

@@ -9,7 +9,8 @@ RUN apk add --no-cache \
     libc6-compat \
     libstdc++ \
     gcc \
-    nginx
+    certbot \
+    certbot-nginx
 
 # Устанавливаем последнюю версию Hugo
 RUN LATEST_HUGO=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "tag_name" | cut -d '"' -f 4) && \
@@ -24,14 +25,18 @@ COPY . /app
 # Инициализируем и обновляем подмодули
 RUN git submodule init && git submodule update
 
-# Строим статический сайт с помощью Hugo
-RUN hugo --ignoreCache -d /var/www/html
-
-# Настраиваем NGINX
-COPY nginx.conf /etc/nginx/nginx.conf
-
-# Открываем порт 80 для сервера
+# Устанавливаем зависимости (если есть)
+# RUN npm install # для JavaScript зависимостей
+# RUN go mod download # для Go зависимостей
+LABEL name="hugo_image"
 EXPOSE 443
 
-# Запуск NGINX
-CMD ["nginx", "-g", "daemon off;"]
+# Строим сайт Hugo
+RUN hugo --ignoreCache
+
+# Получаем сертификаты с помощью certbot
+#RUN certbot certonly --standalone --non-interactive --agree-tos --email mr.woodysimpson@gmail.com -d numerologistic.ru
+
+# hugo server --baseURL https://numerologistic.ru --bind 0.0.0.0 --port 443
+# Запускаем Hugo сервер
+CMD ["hugo", "server", "--baseURL", "https://numerologistic.ru", "--bind", "0.0.0.0", "--port", "443"]

@@ -3,9 +3,9 @@ languageCode: 'ru-ru'
 title: 'Numerologistic'
 theme: 'PaperMod'
 defaultContentLanguage: "ru"
-relativeURLs: true
-canonifyURLs: true
-uglyURLs: true
+relativeURLs: false
+canonifyURLs: false
+uglyURLs: false
 
 params:
   env: "production"

@@ -19,6 +19,7 @@ params:
   ShowWordCount: true
   ShowBreadCrumbs: true
   ShowPostNavLinks: true
+  rssLimit: 100
   social:
     - name: "Twitter"
       url: "https://twitter.com/yourprofile"

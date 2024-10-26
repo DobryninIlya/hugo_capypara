@@ -12,8 +12,7 @@ RUN apk add --no-cache \
     certbot \
     certbot-nginx \
     apache2 \
-    apache2-utils \
-    apache2-mod-deflate
+    apache2-utils
 
 # Устанавливаем последнюю версию Hugo
 RUN LATEST_HUGO=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "tag_name" | cut -d '"' -f 4) && \

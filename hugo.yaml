@@ -13,7 +13,7 @@ params:
     disableFingerprinting: true
   homeInfoParams:
     Title: "Numerologistic - твой путеводитель в нумерологии"
-    Content: Сайт о числах и их влиянии на нашу жизнь
+    Content: "Сайт о числах и их влиянии на нашу жизнь"
 #    Image: "/img/logo.webp"
   cover:
       linkFullImages: true

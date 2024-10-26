@@ -11,6 +11,7 @@ params:
   env: "production"
   assets:
     disableFingerprinting: true
+    favicon: "favicon.png"
   homeInfoParams:
     Title: "Numerologistic - твой путеводитель в нумерологии"
     Content: "Сайт о числах и их влиянии на нашу жизнь"

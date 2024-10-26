@@ -12,7 +12,8 @@ RUN apk add --no-cache \
     certbot \
     certbot-nginx \
     apache2 \
-    apache2-utils
+    apache2-utils \
+    apache2-mod-deflate
 
 # Устанавливаем последнюю версию Hugo
 RUN LATEST_HUGO=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "tag_name" | cut -d '"' -f 4) && \
@@ -32,6 +33,12 @@ RUN hugo --ignoreCache -d /var/www/localhost/htdocs
 
 # Настраиваем Apache
 RUN echo "ServerName localhost" >> /etc/apache2/httpd.conf
+
+# Включаем модуль сжатия и настраиваем его
+RUN echo "LoadModule deflate_module modules/mod_deflate.so" >> /etc/apache2/httpd.conf && \
+    echo "<IfModule mod_deflate.c>" >> /etc/apache2/httpd.conf && \
+    echo "  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json" >> /etc/apache2/httpd.conf && \
+    echo "</IfModule>" >> /etc/apache2/httpd.conf
 
 # Открываем порт 80 для Apache
 EXPOSE 80

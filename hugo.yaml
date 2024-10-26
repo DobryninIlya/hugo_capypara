@@ -1,4 +1,4 @@
-baseURL: '//numerologistic.ru'
+baseURL: 'https://numerologistic.ru'
 languageCode: 'ru-ru'
 title: 'Numerologistic'
 theme: 'PaperMod'

@@ -27,6 +27,7 @@ params:
   ShowWordCount: true
   ShowBreadCrumbs: true
   ShowPostNavLinks: true
+  ShowFullTextinRSS: true
   rssLimit: 1000
   social:
     - name: "Twitter"

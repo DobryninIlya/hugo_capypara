@@ -74,7 +74,7 @@
       <guid>{{ .Permalink }}</guid>
       <description>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end -}}</description>
       {{- if and site.Params.ShowFullTextinRSS .Content }}
-      <turbo:encoded>{{ (printf "<![CDATA[%s]]>" .Content) | safeHTML }}</turbo:encoded>
+      <turbo:content>{{ (printf "<![CDATA[%s]]>" .Content) | safeHTML }}</turbo:content>
       {{- end }}
     </item>
     {{- end }}

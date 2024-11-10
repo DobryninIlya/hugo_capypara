@@ -75,7 +75,7 @@
       <description>{{ with .Description | html }}{{ . }}{{ else }}{{ .Summary | html }}{{ end -}}</description>
       {{- if and site.Params.ShowFullTextinRSS .Content }}
       <turbo:content>{{ (printf "<![CDATA[%s]]>" .Content) | safeHTML }}</turbo:content>
-      <content:encoded>{{ .Content | safeHTML }}</content:encoded>
+      <content:encoded>{{ .Content }}</content:encoded>
       {{- end }}
     </item>
     {{- end }}

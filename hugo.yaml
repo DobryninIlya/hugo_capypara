@@ -11,7 +11,7 @@ params:
   env: "production"
   assets:
     disableFingerprinting: true
-    favicon: "favicon.png"
+    favicon: "favicon.ico"
   homeInfoParams:
     Title: "Нумерология для Начинающих и Продвинутых: Онлайн расчеты по Числам и значениям, новые механики в нумерологии."
     Content: "Сайт о числах и их влиянии на нашу жизнь"

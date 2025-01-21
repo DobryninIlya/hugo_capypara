@@ -87,7 +87,6 @@ Allow: *.css
 Allow: *.js
 
 User-agent: Yandex
-Disallow: /example/
 Host: https://numerologistic.ru
 
 

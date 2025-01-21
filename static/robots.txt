@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 
-# Запрет индексации статей с 0 по 17 в разделе /angel-numerology/
 Disallow: /angel-numerology/0
 Disallow: /angel-numerology/1
 Disallow: /angel-numerology/2
@@ -21,7 +20,6 @@ Disallow: /angel-numerology/15
 Disallow: /angel-numerology/16
 Disallow: /angel-numerology/17
 
-# Запрет индексации статей с 0 по 16 в разделе /calculations/
 Disallow: /calculations/0
 Disallow: /calculations/1
 Disallow: /calculations/2
@@ -40,7 +38,6 @@ Disallow: /calculations/14
 Disallow: /calculations/15
 Disallow: /calculations/16
 
-# Запрет индексации статей с 0 по 13 в разделе /compatibility/
 Disallow: /compatibility/0
 Disallow: /compatibility/1
 Disallow: /compatibility/2
@@ -56,7 +53,6 @@ Disallow: /compatibility/11
 Disallow: /compatibility/12
 Disallow: /compatibility/13
 
-# Запрет индексации статей с 0 по 27 в разделе /numerology/
 Disallow: /numerology/0
 Disallow: /numerology/1
 Disallow: /numerology/2

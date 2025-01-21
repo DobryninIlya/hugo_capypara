@@ -86,10 +86,7 @@ User-agent: Googlebot
 Allow: *.css
 Allow: *.js
 
-User-agent: Yandex
 Host: https://numerologistic.ru
-
-
 Sitemap: https://numerologistic.ru/sitemap.xml
 
 

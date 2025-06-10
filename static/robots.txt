@@ -82,6 +82,9 @@ Disallow: /numerology/25
 Disallow: /numerology/26
 Disallow: /numerology/27
 
+Disallow: /articles/
+Disallow: /articles/2/
+
 User-agent: Googlebot
 Allow: *.css
 Allow: *.js

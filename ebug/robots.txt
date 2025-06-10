@@ -1,0 +1,92 @@
+User-agent: *
+Allow: /
+
+Disallow: /angel-numerology/0
+Disallow: /angel-numerology/1
+Disallow: /angel-numerology/2
+Disallow: /angel-numerology/3
+Disallow: /angel-numerology/4
+Disallow: /angel-numerology/5
+Disallow: /angel-numerology/6
+Disallow: /angel-numerology/7
+Disallow: /angel-numerology/8
+Disallow: /angel-numerology/9
+Disallow: /angel-numerology/10
+Disallow: /angel-numerology/11
+Disallow: /angel-numerology/12
+Disallow: /angel-numerology/13
+Disallow: /angel-numerology/14
+Disallow: /angel-numerology/15
+Disallow: /angel-numerology/16
+Disallow: /angel-numerology/17
+
+Disallow: /calculations/0
+Disallow: /calculations/1
+Disallow: /calculations/2
+Disallow: /calculations/3
+Disallow: /calculations/4
+Disallow: /calculations/5
+Disallow: /calculations/6
+Disallow: /calculations/7
+Disallow: /calculations/8
+Disallow: /calculations/9
+Disallow: /calculations/10
+Disallow: /calculations/11
+Disallow: /calculations/12
+Disallow: /calculations/13
+Disallow: /calculations/14
+Disallow: /calculations/15
+Disallow: /calculations/16
+
+Disallow: /compatibility/0
+Disallow: /compatibility/1
+Disallow: /compatibility/2
+Disallow: /compatibility/3
+Disallow: /compatibility/4
+Disallow: /compatibility/5
+Disallow: /compatibility/6
+Disallow: /compatibility/7
+Disallow: /compatibility/8
+Disallow: /compatibility/9
+Disallow: /compatibility/10
+Disallow: /compatibility/11
+Disallow: /compatibility/12
+Disallow: /compatibility/13
+
+Disallow: /numerology/0
+Disallow: /numerology/1
+Disallow: /numerology/2
+Disallow: /numerology/3
+Disallow: /numerology/4
+Disallow: /numerology/5
+Disallow: /numerology/6
+Disallow: /numerology/7
+Disallow: /numerology/8
+Disallow: /numerology/9
+Disallow: /numerology/10
+Disallow: /numerology/11
+Disallow: /numerology/12
+Disallow: /numerology/13
+Disallow: /numerology/14
+Disallow: /numerology/15
+Disallow: /numerology/16
+Disallow: /numerology/17
+Disallow: /numerology/18
+Disallow: /numerology/19
+Disallow: /numerology/20
+Disallow: /numerology/21
+Disallow: /numerology/22
+Disallow: /numerology/23
+Disallow: /numerology/24
+Disallow: /numerology/25
+Disallow: /numerology/26
+Disallow: /numerology/27
+
+User-agent: Googlebot
+Allow: *.css
+Allow: *.js
+
+Host: https://numerologistic.ru
+Sitemap: https://numerologistic.ru/sitemap.xml
+
+
